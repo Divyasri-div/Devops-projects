@@ -52,12 +52,14 @@ This project demonstrates how to:
 </p>
 
 
-<h3 align="left">security grp-rules</h3>
-<p align="left">
-  <img src="./images/security grp-rules.png" alt="security grp-rules" 
-       width="500" height="300" 
-       style="border:8px solid black; border-radius:5px;">
-</p>
+<h3 align="left">Security Group Rules</h3>
+<table align="left" style="border:8px solid black; border-collapse: collapse;">
+  <tr>
+    <td>
+      <img src="./images/security grp-rules.png" alt="Security Group Rules" width="500" height="300">
+    </td>
+  </tr>
+</table>
 
 
 
