@@ -35,28 +35,28 @@ This project demonstrates how to:
 
 
 
-<h3 align="center">ec2-setup</h3>
-<p align="center">
+<h3 align="left">ec2-setup</h3>
+<p align="left">
   <img src="./images/ec2-setup.png" alt="ec2-setup" 
        width="500" height="300" 
-       style="border:2px solid black; border-radius:5px;">
+       style="border:8px solid black; border-radius:5px;">
 </p>
 
 
 
-<h3 align="center">ec2-setupp</h3>
-<p align="center">
+<h3 align="left">ec2-setupp</h3>
+<p align="left">
   <img src="./images/ec2-setupp.png" alt="ec2-setupp" 
        width="500" height="300" 
-       style="border:2px solid black; border-radius:5px;">
+       style="border:8px solid black; border-radius:5px;">
 </p>
 
 
-<h3 align="center">security grp-rules</h3>
-<p align="center">
+<h3 align="left">security grp-rules</h3>
+<p align="left">
   <img src="./images/security grp-rules.png" alt="security grp-rules" 
        width="500" height="300" 
-       style="border:2px solid black; border-radius:5px;">
+       style="border:8px solid black; border-radius:5px;">
 </p>
 
 
