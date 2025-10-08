@@ -53,7 +53,7 @@ This project demonstrates how to:
 
 
 <h3 align="left">Security Group Rules</h3>
-<table align="left" style="border:20px solid black; border-collapse: collapse;">
+<table align="left" style="border:100px solid black; border-collapse: collapse;">
   <tr>
     <td>
       <img src="./images/security grp-rules.png" alt="Security Group Rules" width="500" height="300">
