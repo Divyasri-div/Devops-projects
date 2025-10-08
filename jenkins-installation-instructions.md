@@ -33,9 +33,33 @@ This project demonstrates how to:
 
 > Port 8080 is required for Jenkins UI access.
 
-![EC2 Setup](images/ec2-setup.png)
-![EC2 Setup](images/ec2-setupp.png)
-![security grp-rules](images/security grp-rules.png)
+
+
+<h3 align="center">ec2-setup</h3>
+<p align="center">
+  <img src="./images/ec2-setup.png" alt="ec2-setup" 
+       width="500" height="300" 
+       style="border:2px solid black; border-radius:5px;">
+</p>
+
+
+
+<h3 align="center">ec2-setupp</h3>
+<p align="center">
+  <img src="./images/ec2-setupp.png" alt="ec2-setupp" 
+       width="500" height="300" 
+       style="border:2px solid black; border-radius:5px;">
+</p>
+
+
+<h3 align="center">security grp-rules</h3>
+<p align="center">
+  <img src="./images/security grp-rules.png" alt="security grp-rules" 
+       width="500" height="300" 
+       style="border:2px solid black; border-radius:5px;">
+</p>
+
+
 
 ---
 
