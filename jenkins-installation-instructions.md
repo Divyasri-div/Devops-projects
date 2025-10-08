@@ -53,7 +53,7 @@ This project demonstrates how to:
 
 
 <h3 align="left">Security Group Rules</h3>
-<table align="left" style="border:8px solid black; border-collapse: collapse;">
+<table align="left" style="border:20px solid black; border-collapse: collapse;">
   <tr>
     <td>
       <img src="./images/security grp-rules.png" alt="Security Group Rules" width="500" height="300">
@@ -63,24 +63,7 @@ This project demonstrates how to:
 
 
 
----
 
-## 🔗 2. Connect to EC2 Instance
-
-Use your terminal to connect via SSH:
-
-```bash
-ssh -i <your-key.pem> ec2-user@<your-ec2-public-ip>
-```
-
-Example:
-
-```bash
-ssh -i mykey.pem ec2-user@13.233.xxx.xxx
-```
-
-![ssh-connectionn](images/ssh-connectionn.png)
-![ssh-connection](images/ssh-connection.png)
 
 
 
