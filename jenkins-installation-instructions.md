@@ -76,7 +76,7 @@ ssh -i mykey.pem ec2-user@13.233.xxx.xxx
 
 <h3 align="left">ssh-connectionn</h3>
 <p align="left">
-  <img src="./images/ssh-connectionn" alt="ssh-connectionn" 
+  <img src="./images/ssh-connectionn.png" alt="ssh-connectionn" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -84,7 +84,7 @@ ssh -i mykey.pem ec2-user@13.233.xxx.xxx
 
 <h3 align="left">ssh-connection</h3>
 <p align="left">
-  <img src="./images/ssh-connection" alt="ssh-connection" 
+  <img src="./images/ssh-connection.png" alt="ssh-connection" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
