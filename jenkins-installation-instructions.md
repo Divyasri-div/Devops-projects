@@ -20,6 +20,7 @@ This project demonstrates how to:
 ## ☁️ 1. Launch EC2 Instance
 
 ### EC2 Configuration:
+
 - **AMI:** Amazon Linux 2 (Free Tier eligible)
 - **Instance Type:** t2.medium
 - **Key Pair:** Existing or newly created `.pem` key
@@ -88,7 +89,7 @@ ssh -i mykey.pem ec2-user@13.233.xxx.xxx
        style="border:8px solid black; border-radius:5px;">
 </p>
 
-## 3. Install Java (Amazon Corretto 17)
+## ☕ 3. Install Java (Amazon Corretto 17)
 
 Jenkins requires Java 17 or higher to run.
 Since Jenkins is built on Java, it depends on a Java Runtime Environment (JRE) or Java Development Kit (JDK) to function — without Java, Jenkins cannot start.
@@ -130,7 +131,7 @@ OpenJDK 64-Bit Server VM Corretto-17.0.11.9.1 (build 17.0.11+9-LTS, mixed mode, 
 </p>
 
 
-## 5. Install Jenkins
+## ⚙️ 5. Install Jenkins
 
 Jenkins is not included in the default Amazon Linux 2 repositories, so you’ll need to add the official Jenkins repository and import its GPG key before installation.
 
@@ -158,7 +159,7 @@ sudo yum install jenkins -y
 </p>
 
 
-## 6. Start and Enable Jenkins
+## 🚀 6. Start and Enable Jenkins
 
 Start and enable the Jenkins service:
 
@@ -180,7 +181,7 @@ Active: active (running)
 </p>
 
 
-## 7. Access Jenkins in Browser
+## 🌐 7. Access Jenkins in Browser
 
 Open your browser and navigate to:
 
@@ -201,7 +202,7 @@ http://13.233.xxx.xxx:8080
        style="border:8px solid black; border-radius:5px;">
 </p>
 
-## 7. Unlock Jenkins
+## 🔑 8. Unlock Jenkins
 
 Get your initial admin password:
 
@@ -249,7 +250,7 @@ http://<your-ec2-public-ip>:8080/
        style="border:8px solid black; border-radius:5px;">
 </p>
 
-## ✅ 8. Verification
+## ✅ 9. Verification
 
 Access Jenkins dashboard:
 
