@@ -196,7 +196,7 @@ http://13.233.xxx.xxx:8080
 
 <h3 align="left">unlock-jenkins</h3>
 <p align="left">
-  <img src="./images/unlock-jenkins-.png" alt="unlock-jenkins" 
+  <img src="./images/unlock-jenkins.png" alt="unlock-jenkins" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
