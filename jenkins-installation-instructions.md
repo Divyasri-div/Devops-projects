@@ -55,6 +55,7 @@ This project demonstrates how to:
 </table>
 
 
+
 <h3 align="left">Security Group Rules</h3>
 <table align="left" style="border:100px solid black; border-collapse: collapse;">
   <tr>
@@ -63,6 +64,74 @@ This project demonstrates how to:
     </td>
   </tr>
 </table>
+
+
+## 🔗 2. Connect to EC2 Instance
+
+Use your terminal to connect via SSH:
+
+```bash
+ssh -i <your-key.pem> ec2-user@<your-ec2-public-ip>
+```
+Example:
+
+```bash
+ssh -i mykey.pem ec2-user@13.233.xxx.xxx
+```
+
+
+<h3 align="left">ssh-connectionn</h3>
+<table align="left" style="border:100px solid black; border-collapse: collapse;">
+  <tr>
+    <td>
+      <img src="./images/ssh-connectionn.png" alt="ssh-connectionn" width="500" height="300">
+    </td>
+  </tr>
+</table>
+
+
+<h3 align="left">ssh-connection</h3>
+<table align="left" style="border:100px solid black; border-collapse: collapse;">
+  <tr>
+    <td>
+      <img src="./images/ssh-connection.png" alt="ssh-connection" width="500" height="300">
+    </td>
+  </tr>
+</table>
+
+## 3. Install Java (Amazon Corretto 17)
+
+Jenkins requires Java 17 or above. Install Amazon Corretto 17 using:
+
+```bash
+sudo yum update -y
+sudo yum install java-17-amazon-corretto -y
+```
+
+<h3 align="left">java-installation</h3>
+<table align="left" style="border:100px solid black; border-collapse: collapse;">
+  <tr>
+    <td>
+      <img src="./images/java-installation.png" alt="java-installation" width="500" height="300">
+    </td>
+  </tr>
+</table>
+
+<h3 align="left">java-version</h3>
+<table align="left" style="border:100px solid black; border-collapse: collapse;">
+  <tr>
+    <td>
+      <img src="./images/java-version.png" alt="java-version" width="500" height="300">
+    </td>
+  </tr>
+</table>
+
+
+
+
+
+
+
 
 
 
