@@ -36,20 +36,23 @@ This project demonstrates how to:
 
 
 <h3 align="left">ec2-setup</h3>
-<p align="left">
-  <img src="./images/ec2-setup.png" alt="ec2-setup" 
-       width="500" height="300" 
-       style="border:8px solid black; border-radius:5px;">
-</p>
-
+<table align="left" style="border:100px solid black; border-collapse: collapse;">
+  <tr>
+    <td>
+      <img src="./images/ec2-setup.png" alt="ec2-setup" width="500" height="300">
+    </td>
+  </tr>
+</table>
 
 
 <h3 align="left">ec2-setupp</h3>
-<p align="left">
-  <img src="./images/ec2-setupp.png" alt="ec2-setupp" 
-       width="500" height="300" 
-       style="border:8px solid black; border-radius:5px;">
-</p>
+<table align="left" style="border:100px solid black; border-collapse: collapse;">
+  <tr>
+    <td>
+      <img src="./images/ec2-setupp.png" alt="ec2-setupp" width="500" height="300">
+    </td>
+  </tr>
+</table>
 
 
 <h3 align="left">Security Group Rules</h3>
