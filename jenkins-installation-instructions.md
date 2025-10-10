@@ -13,7 +13,6 @@ This project demonstrates how to:
 - Install and configure **Java 17 (Amazon Corretto)**
 - Install and run **Jenkins** as a service
 - Access Jenkins from the public IP
-- Secure and manage Jenkins for CI/CD pipelines
 
 ---
 
@@ -149,7 +148,9 @@ sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 
 Install Jenkins:
 
+```bash
 sudo yum install jenkins -y
+```
 
 <h3 align="left">jenkins-install</h3>
 <p align="left">
