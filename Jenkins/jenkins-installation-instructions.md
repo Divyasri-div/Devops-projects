@@ -37,7 +37,7 @@ This project demonstrates how to:
 
 <h3 align="left">ec2-setup</h3>
 <p align="left">
-  <img src="../images/ec2-setup.png" alt="ec2-setup" 
+  <img src=".../images/ec2-setup.png" alt="ec2-setup" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -45,7 +45,7 @@ This project demonstrates how to:
 
 <h3 align="left">ec2-setupp</h3>
 <p align="left">
-  <img src="./images/ec2-setupp.png" alt="ec2-setupp" 
+  <img src="../images/ec2-setupp.png" alt="ec2-setupp" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -53,7 +53,7 @@ This project demonstrates how to:
 
 <h3 align="left">security grp-rules</h3>
 <p align="left">
-  <img src="./images/security grp-rules.png" alt="security grp-rules" 
+  <img src="../images/security grp-rules.png" alt="security grp-rules" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -75,7 +75,7 @@ ssh -i mykey.pem ec2-user@13.233.xxx.xxx
 
 <h3 align="left">ssh-connectionn</h3>
 <p align="left">
-  <img src="./images/ssh-connectionn.png" alt="ssh-connectionn" 
+  <img src="../images/ssh-connectionn.png" alt="ssh-connectionn" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -83,7 +83,7 @@ ssh -i mykey.pem ec2-user@13.233.xxx.xxx
 
 <h3 align="left">ssh-connection</h3>
 <p align="left">
-  <img src="./images/ssh-connection.png" alt="ssh-connection" 
+  <img src="../images/ssh-connection.png" alt="ssh-connection" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -103,7 +103,7 @@ sudo yum install java-17-amazon-corretto -y
 
 <h3 align="left">java-installation</h3>
 <p align="left">
-  <img src="./images/java-installation.png" alt="java-installation" 
+  <img src="../images/java-installation.png" alt="java-installation" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -124,7 +124,7 @@ OpenJDK 64-Bit Server VM Corretto-17.0.11.9.1 (build 17.0.11+9-LTS, mixed mode, 
 
 <h3 align="left">java-version</h3>
 <p align="left">
-  <img src="./images/java-version.png" alt="java-version" 
+  <img src="../images/java-version.png" alt="java-version" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -154,7 +154,7 @@ sudo yum install jenkins -y
 
 <h3 align="left">jenkins-install</h3>
 <p align="left">
-  <img src="./images/jenkins-install.png" alt="jenkins-install" 
+  <img src="../images/jenkins-install.png" alt="jenkins-install" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -176,7 +176,7 @@ Active: active (running)
 
 <h3 align="left">jenkins-active</h3>
 <p align="left">
-  <img src="./images/jenkins-active.png" alt="jenkins-active" 
+  <img src="../images/jenkins-active.png" alt="jenkins-active" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -198,7 +198,7 @@ http://13.233.xxx.xxx:8080
 
 <h3 align="left">unlock-jenkins</h3>
 <p align="left">
-  <img src="./images/unlock-jenkins.png" alt="unlock-jenkins" 
+  <img src="../images/unlock-jenkins.png" alt="unlock-jenkins" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -224,21 +224,21 @@ http://<your-ec2-public-ip>:8080/
 
 <h3 align="left">jenkins-unlock</h3>
 <p align="left">
-  <img src="./images/jenkins-unlock.png" alt="jenkins-unlock" 
+  <img src="../images/jenkins-unlock.png" alt="jenkins-unlock" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
 
 <h3 align="left">jenkins-plugin</h3>
 <p align="left">
-  <img src="./images/jenkins-plugin.png" alt="jenkins-plugin" 
+  <img src="../images/jenkins-plugin.png" alt="jenkins-plugin" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
 
 <h3 align="left">jenkins-getting started</h3>
 <p align="left">
-  <img src="./images/jenkins-getting started.png" alt="jenkins-getting started" 
+  <img src="../images/jenkins-getting started.png" alt="jenkins-getting started" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -246,7 +246,7 @@ http://<your-ec2-public-ip>:8080/
 
 <h3 align="left">jenkins-ready</h3>
 <p align="left">
-  <img src="./images/jenkins-ready.png" alt="jenkins-ready" 
+  <img src="../images/jenkins-ready.png" alt="jenkins-ready" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -259,7 +259,7 @@ http://<your-ec2-public-ip>:8080
 
 <h3 align="left">jenkins-dashboard</h3>
 <p align="left">
-  <img src="./images/jenkins-dashboard.png" alt="jenkins-dashboard" 
+  <img src="../images/jenkins-dashboard.png" alt="jenkins-dashboard" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
