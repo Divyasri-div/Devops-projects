@@ -37,7 +37,7 @@ This project demonstrates how to:
 
 <h3 align="left">ec2-setup</h3>
 <p align="left">
-  <img src="Devops-projects/images/ec2-setup.png" alt="ec2-setup" 
+  <img src="/Devops-projects/images/ec2-setup.png" alt="ec2-setup" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
