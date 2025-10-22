@@ -180,12 +180,7 @@ sudo systemctl status tomcat
 | Custom TCP | TCP      | 8080       | 0.0.0.0/0                 |  
 ---
 
-<h3 align="left">security grp-rules</h3>
-<p align="left">
-  <img src="./images/security grp-rules.png" alt="security grp-rules" 
-       width="500" height="300" 
-       style="border:8px solid black; border-radius:5px;">
-</p>
+
 
 ## 🧭 Step 11: Access Tomcat in Your Browser
 
