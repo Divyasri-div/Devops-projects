@@ -1,0 +1,42 @@
+# 🧩 Apache Tomcat Installation on AWS EC2 (Amazon Linux 2)
+
+## 🧭 Overview
+**Apache Tomcat** is an open-source Java application server used to deploy and run Java web applications.  
+In this guide, we’ll set up **Tomcat on an EC2 instance (Amazon Linux 2)** from scratch, verify the installation, and configure it as a system service.
+
+---
+
+## ⚙️ Prerequisites
+
+Before you begin, ensure you have:
+
+- An **AWS EC2 instance** (Amazon Linux 2)
+- **Security Group** with:
+  - Port **22 (SSH)** open — to connect
+  - Port **8080 (HTTP)** open — to access Tomcat
+- A valid **key pair (.pem file)** for SSH login
+- **Sudo privileges**
+
+---
+
+## 🖥️ Step 1: Connect to the EC2 Instance
+
+Use your key pair to connect via SSH:
+```bash
+ssh -i "your-key.pem" ec2-user@<your-public-ip>
+```bash
+
+
+## ☕ Step 2: Install Java (Amazon Corretto 17)
+
+Tomcat requires Java to run.
+We’ll use Amazon Corretto 17, a stable and production-ready OpenJDK version provided by AWS.
+
+```bash
+sudo yum update -y
+sudo yum install java-17-amazon-corretto -y
+```bash
+
+## Verify installation:
+
+java -version
