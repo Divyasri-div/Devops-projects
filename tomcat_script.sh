@@ -71,11 +71,11 @@ echo -e "${blue}Downloading Apache Tomcat 10......${reset}"
 
 cd /tmp
 
-wget https://downloads.apache.org/tomcat/tomcat-10/v10.1.31/bin/apache-tomcat-10.1.31.tar.gz
+wget https://downloads.apache.org/tomcat/tomcat-10/v10.1.48/bin/apache-tomcat-10.1.48.tar.gz
 
 sudo mkdir /opt/tomcat
 
-sudo tar -xzvf apache-tomcat-10.1.31.tar.gz -C /opt/tomcat --strip-components=1
+sudo tar -xzvf apache-tomcat-10.1.48.tar.gz -C /opt/tomcat --strip-components=1
 
 print_color "Tomcat downloaded and extracted"
 
