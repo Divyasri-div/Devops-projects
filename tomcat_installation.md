@@ -1,7 +1,22 @@
-# 🚀 Apache Tomcat 10 Installation on Amazon Linux 2 (EC2)
+#  🚀 Apache Tomcat Installation on AWS EC2 (Amazon Linux 2)
 
-This guide walks you through installing and configuring **Apache Tomcat 10 (latest stable)** on an **Amazon Linux 2 EC2 instance**.
+## 🧭 Overview
+
+**Apache Tomcat** is an open-source Java application server used to deploy and run Java web applications.  
+In this guide, we’ll set up **Tomcat on an EC2 instance (Amazon Linux 2)** from scratch, verify the installation, and configure it as a system service.
 By the end, you’ll have Tomcat running as a systemd service and accessible via port **8080**.
+---
+
+## ⚙️ Prerequisites
+
+Before you begin, ensure you have:
+
+- An **AWS EC2 instance** (Amazon Linux 2)
+- **Security Group** with:
+  - Port **22 (SSH)** open — to connect
+  - Port **8080 (HTTP)** open — to access Tomcat
+- A valid **key pair (.pem file)** for SSH login
+- **Sudo privileges**
 
 ---
 
