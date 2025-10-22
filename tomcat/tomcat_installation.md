@@ -1,10 +1,11 @@
-#  🚀 Apache Tomcat Installation on AWS EC2 (Amazon Linux 2)
+## 🚀 Apache Tomcat Installation on AWS EC2 (Amazon Linux 2)
 
 ## 🧭 Overview
 
 **Apache Tomcat** is an open-source Java application server used to deploy and run Java web applications.  
 In this guide, we’ll set up **Tomcat on an EC2 instance (Amazon Linux 2)** from scratch, verify the installation, and configure it as a system service.
 By the end, you’ll have Tomcat running as a systemd service and accessible via port **8080**.
+
 ---
 
 ## ⚙️ Prerequisites
@@ -179,12 +180,7 @@ sudo systemctl status tomcat
 | Custom TCP | TCP      | 8080       | 0.0.0.0/0                 |  
 ---
 
-<h3 align="left">security grp-rules</h3>
-<p align="left">
-  <img src="./images/security grp-rules.png" alt="security grp-rules" 
-       width="500" height="300" 
-       style="border:8px solid black; border-radius:5px;">
-</p>
+
 
 ## 🧭 Step 11: Access Tomcat in Your Browser
 
