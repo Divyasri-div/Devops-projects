@@ -3,7 +3,7 @@
 # Script name : tomcat_script.sh
 # Description : Apache Tomcat 10 installation and configuration on AWS EC2 (Amazon Linux 2)
 # Author      : B.Divyasri
-# Version     : 1.1 (idempotent)
+# Version     : 1.1 
 
 #------Safety settings-------------------------------------------------------------
 set -eu
