@@ -3,7 +3,7 @@
 # Script name : tomcat_script.sh
 # Description : Apache Tomcat 10 installation and configuration on AWS EC2 (Amazon Linux 2)
 # Author      : B.Divyasri
-# Version     : 1.0
+# Version     : 1.1 (idempotent)
 
 #------Safety settings-------------------------------------------------------------
 set -eu
@@ -17,83 +17,80 @@ blue="\e[34m"
 reset="\e[0m"
 
 #------Functions--------------------------------
-
-print_color(){
-if [[ $? -eq 0 ]] ; then
-    echo -e "${green} $1 ${reset}"
-else
-    echo -e  "${red} $1 ${reset}"
-    exit 1
-fi
+print_color() {
+    if [[ $? -eq 0 ]]; then
+        echo -e "${green}$1${reset}"
+    else
+        echo -e "${red}$1${reset}"
+        exit 1
+    fi
 }
 
-check_service(){
+check_service() {
     local service_name="$1"
-
     if systemctl is-active --quiet "$service_name"; then
         echo "Service '$service_name' is active."
-        exit 0
     else
         echo "Service '$service_name' is inactive or not running."
         exit 1
     fi
 }
 
-# 1. Update packages
-
-echo -e "${blue}updating packages......${reset}"
-
+#------1. Update packages--------------------------------------
+echo -e "${blue}Updating packages...${reset}"
 sudo yum update -y
-
 print_color "System packages updated."
 
-# 2. Install Java 17
-
-echo -e "${blue}installing java 17......${reset}"
-
-sudo yum install java-17-amazon-corretto -y
-
+#------2. Install Java 17-------------------------------------
+echo -e "${blue}Installing Java 17...${reset}"
+if ! java -version &>/dev/null; then
+    sudo yum install java-17-amazon-corretto -y
+else
+    echo "Java already installed, skipping..."
+fi
 print_color "Java 17 installed successfully"
-
 java -version
 
-# 3. Create Tomcat user
+#------3. Create Tomcat user-----------------------------------
+echo -e "${blue}Creating tomcat user...${reset}"
+if id "tomcat" &>/dev/null; then
+    echo "User 'tomcat' already exists, skipping..."
+else
+    sudo useradd -m -U -d /opt/tomcat -s /bin/false tomcat
+fi
+print_color "Tomcat user ready."
 
-echo -e "${blue}Creating tomcat user......${reset}"
-
-sudo useradd -m -U -d /opt/tomcat -s /bin/false tomcat
-
-print_color "Tomcat user created"
-
-# 4. Download and extract Tomcat
-
-echo -e "${blue}Downloading Apache Tomcat 10......${reset}"
-
+#------4. Download and extract Tomcat--------------------------
+echo -e "${blue}Downloading Apache Tomcat 10...${reset}"
 cd /tmp
 
-wget https://downloads.apache.org/tomcat/tomcat-10/v10.1.48/bin/apache-tomcat-10.1.48.tar.gz
+TOMCAT_VERSION="10.1.48"
+TOMCAT_TAR="apache-tomcat-${TOMCAT_VERSION}.tar.gz"
+TOMCAT_URL="https://downloads.apache.org/tomcat/tomcat-10/v${TOMCAT_VERSION}/bin/${TOMCAT_TAR}"
 
-sudo mkdir /opt/tomcat
+if [[ ! -f "$TOMCAT_TAR" ]]; then
+    wget "$TOMCAT_URL"
+else
+    echo "Tomcat archive already downloaded, skipping..."
+fi
 
-sudo tar -xzvf apache-tomcat-10.1.48.tar.gz -C /opt/tomcat --strip-components=1
+if [[ -d /opt/tomcat ]]; then
+    echo "/opt/tomcat already exists, skipping directory creation..."
+else
+    sudo mkdir /opt/tomcat
+fi
 
-print_color "Tomcat downloaded and extracted"
+sudo tar -xzvf "$TOMCAT_TAR" -C /opt/tomcat --strip-components=1
+print_color "Tomcat downloaded and extracted."
 
-# 5. Set permissions
-
-echo -e "${blue}Setting permissions......${reset}"
-
+#------5. Set permissions--------------------------------------
+echo -e "${blue}Setting permissions...${reset}"
 sudo chown -R tomcat: /opt/tomcat
-
 sudo chmod -R 755 /opt/tomcat
+print_color "Permissions set."
 
-print_color "Permissions set"
-
-
-# 6. Create systemd service file
-
-echo -e "${blue}Creating systemd service file for Tomcat......${reset}"
-
+#------6. Create systemd service file---------------------------
+echo -e "${blue}Creating systemd service file for Tomcat...${reset}"
 sudo tee /etc/systemd/system/tomcat.service > /dev/null <<EOF
 [Unit]
 Description=Apache Tomcat Web Application Container
@@ -101,7 +98,6 @@ After=network.target
 
 [Service]
 Type=forking
-
 User=tomcat
 Group=tomcat
 
@@ -118,17 +114,12 @@ ExecStop=/opt/tomcat/bin/shutdown.sh
 [Install]
 WantedBy=multi-user.target
 EOF
+print_color "Tomcat systemd service file created."
 
-print_color "Tomcat systemd service file created"
-
-# 7. Start and enable Tomcat service
-
-echo -e "${blue}Starting and enabling Tomcat service......${reset}"
-
+#------7. Start and enable Tomcat service-----------------------
+echo -e "${blue}Starting and enabling Tomcat service...${reset}"
 sudo systemctl daemon-reload
 sudo systemctl enable tomcat
-sudo systemctl start tomcat
-
-sudo systemctl status tomcat
-
+sudo systemctl restart tomcat
+sudo systemctl status tomcat --no-pager
 check_service "tomcat"
