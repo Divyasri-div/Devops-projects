@@ -135,7 +135,7 @@ EOF
 ```
 <h3 align="left">service-file</h3>
 <p align="left">
-  <img src="./images/service-file.png" alt="service-file" 
+  <img src="../images/service-file.png" alt="service-file" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -159,7 +159,7 @@ sudo systemctl status tomcat
 
 <h3 align="left">tomcat-status</h3>
 <p align="left">
-  <img src="./images/tomcat-status.png" alt="tomcat-status" 
+  <img src="../images/tomcat-status.png" alt="tomcat-status" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -194,7 +194,7 @@ http://<your-ec2-public-ip>:8080
 
 <h3 align="left">tomcat-page</h3>
 <p align="left">
-  <img src="./images/tomcat-page.png" alt="tomcat-page" 
+  <img src="../images/tomcat-page.png" alt="tomcat-page" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
