@@ -103,8 +103,6 @@ You should see the **Nginx Welcome Page** 🎉
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
-
-
 Or check from the terminal:
 
 ```bash
