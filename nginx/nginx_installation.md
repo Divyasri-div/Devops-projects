@@ -67,7 +67,7 @@ sudo systemctl status nginx
 ✅ You should see: `Active: active (running)`
 <h3 align="left">nginx-status</h3>
 <p align="left">
-  <img src="./images/nginx-status.png" alt="nginx-status" 
+  <img src="../images/nginx-status.png" alt="nginx-status" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -99,7 +99,7 @@ http://<EC2-PUBLIC-IP>
 You should see the **Nginx Welcome Page** 🎉
 <h3 align="left">nginx-webpage</h3>
 <p align="left">
-  <img src="./images/nginx-webpage.png" alt="nginx-webpage" 
+  <img src="../images/nginx-webpage.png" alt="nginx-webpage" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -159,7 +159,7 @@ sudo systemctl reload nginx
 Visit your EC2 Public IP again — your custom message should appear.
 <h3 align="left">custom-webpage</h3>
 <p align="left">
-  <img src="./images/custom-webpage.png" alt="custom-webpage" 
+  <img src="../images/custom-webpage.png" alt="custom-webpage" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
