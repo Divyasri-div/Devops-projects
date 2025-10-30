@@ -49,11 +49,65 @@ sudo yum install nginx -y
 
 ---
 
-### 4. Start and Enable Nginx
+---
+
+### 4. 🔁 Change Nginx Default Port (80 ➝ 9090)
+
+By default, Nginx listens on **port 80** for HTTP traffic.  
+However, in some cases you may want to change the port number — for example:
+
+✅ Port 80 is already being used by another service  
+✅ You want to run multiple web servers on the same machine  
+✅ You need a custom port for testing or internal applications  
+
+In this setup, we will change Nginx to listen on **port 9090**.
+
+---
+
+## ✅ Step 1 — Edit Nginx Configuration
+
+Open the main config file:
+
+```bash
+sudo vi /etc/nginx/nginx.conf
+```
+Find this block:
+
+server {
+    listen       80;
+    server_name  _;
+
+
+Change 80 to 9090:
+
+server {
+    listen       9090;
+    server_name  _;
+	
+Save and exit (:wq).
+
+
+
+##✅ Step 2 — Allow Port 9090 in Security Group
+
+Go to AWS Console:
+
+EC2 → Instances → Security → Security Groups
+
+Edit inbound rules
+
+Add:
+------------------------------
+|Type	   | Port |	Source    |
+|----------|------|-----------|
+|Custom TCP| 9090 |	0.0.0.0/0 |
+-----------------------------
+### 5. Start and Enable Nginx
 
 Start the Nginx service and enable it to run on boot:
 
 ```bash
+sudo nginx -t
 sudo systemctl start nginx
 sudo systemctl enable nginx
 ```
@@ -74,7 +128,7 @@ sudo systemctl status nginx
 
 ---
 
-### 5. Allow HTTP Traffic (if not already)
+### 6. Allow HTTP Traffic (if not already)
 
 In the AWS Management Console:
 
@@ -88,7 +142,7 @@ In the AWS Management Console:
 
 ---
 
-### 6. Verify Installation
+### 7. Verify Installation
 
 Open your browser and visit:
 
@@ -103,6 +157,8 @@ You should see the **Nginx Welcome Page** 🎉
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
+
+
 Or check from the terminal:
 
 ```bash
@@ -111,7 +167,7 @@ curl http://localhost
 
 ---
 
-### 7. Manage Nginx Service
+### 8. Manage Nginx Service
 
 | Action               | Command                        |
 | -------------------- | ------------------------------ |
@@ -122,7 +178,7 @@ curl http://localhost
 
 ---
 
-### 8. Default File Locations
+### 9. Default File Locations
 
 | Path                     | Description                    |
 | ------------------------ | ------------------------------ |
@@ -133,7 +189,7 @@ curl http://localhost
 
 ---
 
-### 9. Custom Web Page (Optional)
+### 10. Custom Web Page (Optional)
 
 Replace the default index page:
 

@@ -102,8 +102,34 @@ sudo chmod -R 755 /opt/tomcat
 ```
 
 ---
+## ✅ Step 8: Change Tomcat Default Port (8080 → 8081)
 
-## ⚙️ Step 8: Create a systemd Service File
+Tomcat listens on 8080 by default.
+We are changing it to 8081 because:
+
+✅ Port 8080 may be used by another application
+✅ Useful when running multiple application servers
+✅ Needed for custom internal environments
+
+Edit server.xml
+
+```bash 
+sudo vi /opt/tomcat/conf/server.xml
+```
+
+Find this line:
+
+<Connector port="8080" protocol="HTTP/1.1"
+
+
+Change 8080 → 8081:
+
+<Connector port="8081" protocol="HTTP/1.1"
+
+
+Save & exit: :wq
+
+## ⚙️ Step 9: Create a systemd Service File
 
 Create a service unit to manage Tomcat using `systemctl`:
 
@@ -141,7 +167,7 @@ EOF
 </p>
 ---
 
-## 🔁 Step 9: Reload Daemon and Start Tomcat
+## 🔁 Step 10: Reload Daemon and Start Tomcat
 
 ```bash
 sudo systemctl daemon-reload
@@ -166,7 +192,7 @@ sudo systemctl status tomcat
 
 ---
 
-## 🌐 Step 10: Allow Port 8080 in Security Group
+## 🌐 Step 11: Allow Port 8080 in Security Group
 
 1. Go to your **AWS EC2 Console**
 2. Navigate to **Security Groups** → Select your instance’s security group
@@ -177,7 +203,7 @@ sudo systemctl status tomcat
 | ---------- | -------- | ---------- | ------------------------- |
 |  SSH       | TCP      | 22         | My IP                     |
 | HTTP       | TCP      | 80         | 0.0.0.0/0                 |
-| Custom TCP | TCP      | 8080       | 0.0.0.0/0                 |  
+| Custom TCP | TCP      | 8081      | 0.0.0.0/0                 |  
 ---
 
 

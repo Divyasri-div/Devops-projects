@@ -49,32 +49,50 @@ print_color "System packages updated successfully."
 
 # 2. Install Nginx
 echo -e "${blue}Installing Nginx web server...${reset}"
-sudo amazon-linux-extras install nginx1 -y || sudo dnf install nginx -y
+sudo yum install nginx -y
 print_color "Nginx installed successfully."
 
-# 3. Enable and Start Nginx Service
+# 3. Change Nginx Port (80 → 9090)
+echo -e "${blue}Changing Nginx default port (80 → 9090)...${reset}"
+
+# Replacing 'listen 80;' with 'listen 9090;' in nginx.conf
+sudo sed -i 's/listen[[:space:]]\+80;/listen 9090;/g' /etc/nginx/nginx.conf
+
+# Test syntax after port change
+sudo nginx -t
+print_color "Nginx configuration updated to port 9090."
+
+
+# 4. Enable and Start Nginx Service
 echo -e "${blue}Starting and enabling Nginx service...${reset}"
 sudo systemctl enable nginx
 sudo systemctl start nginx
+
 print_color "Nginx service started and enabled on boot."
 
-# 4. Check Nginx Service Status
+# 5. Check Nginx Service Status
+
 check_service "nginx"
 
+# 6. Create Custom Web Page
 
-# 5. Create Custom Web Page
 # Use single quotes to avoid history expansion issues with '!'
 # This prevents the error: -bash: !: event not found
+
 echo -e "${blue}Creating a custom Nginx web page...${reset}"
+
 echo '<h1>Welcome to My Nginx Server on Amazon Linux!</h1>' | sudo tee /usr/share/nginx/html/index.html > /dev/null
+
 print_color "Custom Nginx web page created."
 
-# 6. Verify Web Page Content
+# 7. Verify Web Page Content
+
 echo -e "${blue}Verifying Nginx web server response...${reset}"
 curl -I http://localhost || true
 
-# 7. Display Completion Message
+# 8. Display Completion Message
 echo -e "${green}-------------------------------------------------${reset}"
 echo -e "${green}✅ Nginx installation and configuration completed successfully.${reset}"
+echo -e "${green}✅ If running in AWS, allow Custom TCP Port 9090 in your Security Group.${reset}"
 echo -e "${green}Visit http://<EC2-PUBLIC-IP> in your browser to confirm.${reset}"
 echo -e "${green}-------------------------------------------------${reset}"

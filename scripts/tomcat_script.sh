@@ -89,9 +89,26 @@ sudo chown -R tomcat: /opt/tomcat
 sudo chmod -R 755 /opt/tomcat
 print_color "Permissions set."
 
+
+#------5.1 Change Tomcat default port from 8080 to 8081-----------------
+
+echo -e "${blue}Configuring Tomcat to run on port 8081...${reset}"
+
+SERVER_XML="/opt/tomcat/conf/server.xml"
+
+if grep -q 'port="8081"' $SERVER_XML; then
+    echo "Tomcat already configured for port 8081, skipping..."
+else
+    sudo sed -i 's/port="8080"/port="8081"/' $SERVER_XML
+    print_color "Tomcat port updated from 8080 to 8081."
+fi
+
 #------6. Create systemd service file---------------------------
+
 echo -e "${blue}Creating systemd service file for Tomcat...${reset}"
+
 sudo tee /etc/systemd/system/tomcat.service > /dev/null <<EOF
+
 [Unit]
 Description=Apache Tomcat Web Application Container
 After=network.target
@@ -117,9 +134,15 @@ EOF
 print_color "Tomcat systemd service file created."
 
 #------7. Start and enable Tomcat service-----------------------
+
 echo -e "${blue}Starting and enabling Tomcat service...${reset}"
+
 sudo systemctl daemon-reload
 sudo systemctl enable tomcat
 sudo systemctl restart tomcat
 sudo systemctl status tomcat --no-pager
 check_service "tomcat"
+
+print_color "Tomcat installation completed successfully!"
+
+echo -e "${green}✅ Access Tomcat here: http://<EC2-Public-IP>:8081${reset}"
