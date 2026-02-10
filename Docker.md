@@ -46,7 +46,7 @@ Each backend returns its container hostname, making it easy to verify load balan
 - Docker Compose
 
 
-# 1️ Flask Application (app.py)
+# 1️.Flask Application (app.py)
 
 ```bash
 from flask import Flask
@@ -65,11 +65,11 @@ if __name__ == '__main__':
 
 Each request responds with the container hostname.
 
-# 2️ Dependencies (requirements.txt)
+# 2️.Dependencies (requirements.txt)
 ```
 flask
 ```
-# 3️ Dockerfile (Backend Service)
+# 3️.Dockerfile (Backend Service)
 ```bash
 
 FROM python:3.9
@@ -86,7 +86,7 @@ EXPOSE 5000
 CMD ["python", "app.py"]
 ```
 
-# 4️ Nginx Load Balancer Configuration (nginx.conf)
+# 4️.Nginx Load Balancer Configuration (nginx.conf)
 ```
 
 upstream backend {
@@ -109,7 +109,7 @@ server {
 ```
 Nginx distributes traffic across all backend containers.
 
-# 5️ Docker Compose Configuration (docker-compose.yml)
+# 5️.Docker Compose Configuration (docker-compose.yml)
 ```bash
 
 version: '3'
