@@ -86,6 +86,7 @@ print_color "jenkins repository added"
 echo -e "${blue}installing jenkins......${reset}"
 
 sudo yum install jenkins -y
+sudo mount -o remount,size=2G /tmp
 
 print_color "Jenkins installed successfully"
 
