@@ -94,7 +94,7 @@ mvn Test
 
 <h3 align="left">sonarqube</h3>
 <p align="left">
-  <img src="./images/sonarqube.png" alt="sonarqube" 
+  <img src="../images/sonarqube.png" alt="sonarqube" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -120,7 +120,7 @@ target/myapp.war
 
 <h3 align="left">S3-bucket</h3>
 <p align="left">
-  <img src="./images/S3-bucket.png" alt="S3-bucket" 
+  <img src="../images/S3-bucket.png" alt="S3-bucket" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -135,7 +135,7 @@ target/myapp.war
 
 <h3 align="left">nexus-repo</h3>
 <p align="left">
-  <img src="./images/nexus-repo.png" alt="nexus-repo" 
+  <img src="../images/nexus-repo.png" alt="nexus-repo" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -151,7 +151,7 @@ target/myapp.war
 
 <h3 align="left">tomcat-deployed</h3>
 <p align="left">
-  <img src="./images/tomcat-deployed.png" alt="tomcat-deployed" 
+  <img src="../images/tomcat-deployed.png" alt="tomcat-deployed" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -159,7 +159,7 @@ target/myapp.war
 
 <h3 align="left">app-live</h3>
 <p align="left">
-  <img src="./images/app-live.png" alt="app-live" 
+  <img src="../images/app-live.png" alt="app-live" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
