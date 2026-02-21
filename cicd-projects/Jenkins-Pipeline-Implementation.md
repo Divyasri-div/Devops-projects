@@ -271,6 +271,14 @@ pipeline {
     }
 }
 ```
+
+<h3 align="left">pipeline-stages</h3>
+<p align="left">
+  <img src="../images/pipeline-stages.png" alt="pipeline-stages" 
+       width="500" height="300" 
+       style="border:8px solid black; border-radius:5px;">
+</p>
+
 ## ☁️ Infrastructure Details
 
 | Service     | Hosted On | Port  |
