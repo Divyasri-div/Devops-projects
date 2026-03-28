@@ -227,8 +227,9 @@ http://<EC2-Public-IP>:8081
 
 
 ✅ Verification Commands
-
+```
 kubectl get pods
 kubectl get services
 kubectl get deployments
 
+```
