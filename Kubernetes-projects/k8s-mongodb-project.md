@@ -220,7 +220,7 @@ http://<EC2-Public-IP>:8081
 ```
 <h3 align="left">mongo-express-UI</h3>
 <p align="left">
-  <img src="./images/mongo-express-UI.png" alt="mongo-express-UI" 
+  <img src="../images/mongo-express-UI.png" alt="mongo-express-UI" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
