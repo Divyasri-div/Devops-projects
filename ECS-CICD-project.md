@@ -48,7 +48,7 @@ Create a Task Definition with the following configuration:
 
 <h3 align="left">task_def</h3>
 <p align="left">
-  <img src="/images/task_def.png" alt="task_def" 
+  <img src="images/task_def.png" alt="task_def" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
