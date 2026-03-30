@@ -48,7 +48,7 @@ Create a Task Definition with the following configuration:
 
 <h3 align="left">task_def</h3>
 <p align="left">
-  <img src="images/image/task_def.png" alt="task_def" 
+  <img src="../images/task_def.png" alt="task_def" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -103,7 +103,7 @@ To provide a stable endpoint, create a **Service**.
 
 <h3 align="left">access_service</h3>
 <p align="left">
-  <img src="images/image/access_service.png" alt="access_service" 
+  <img src="../images/access_service.png" alt="access_service" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -117,17 +117,13 @@ Create a build project in **AWS CodeBuild**
 
 * **Project Name:** `website`
 * **Source:** GitHub
-* **Repository:**
-
-  ```
-https://github.com/Divyasri-div/website.git
-  ```
+* **Repository:** https://github.com/Divyasri-div/website.git
 * **Buildspec File:** `buildspec.yml`
 * **Artifacts:** None
 
 <h3 align="left">buildproject</h3>
 <p align="left">
-  <img src="images/image/buildproject.png" alt="buildproject" 
+  <img src="../images/buildproject.png" alt="buildproject" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -151,12 +147,14 @@ Attach the following policies:
 * Add IAM permissions
 * Second build → ✅ success
 
+
 <h3 align="left">build_success</h3>
 <p align="left">
-  <img src="images/image/build_success.png" alt="build_success" 
+  <img src="../images/build_success.png" alt="build_success" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
+
 
 ➡️ Docker image pushed to **Amazon ECR**
 
@@ -198,9 +196,10 @@ Create pipeline in **AWS CodePipeline**
   ```
   imagedefinitions.json
   ```
+  
 <h3 align="left">pipeline</h3>
 <p align="left">
-  <img src="images/image/pipeline.png" alt="pipeline" 
+  <img src="../images/pipeline.png" alt="pipeline" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
