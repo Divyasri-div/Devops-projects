@@ -326,11 +326,3 @@ This project showcases a **complete production-ready DevSecOps pipeline** integr
 * Security
 * Scalability
 * Observability
-
----
-
-If you want, I can also:
-
-* Convert this into **PDF**
-* Add **architecture diagram**
-* Or make it **resume-ready project description** 🚀
