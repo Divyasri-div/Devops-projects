@@ -231,18 +231,18 @@ aws sts get-caller-identity --region ap-south-1
 7. PREREQUISITES CHECKLIST
 --------------------------
 
-[ ] AWS account created
-[ ] Required AWS permissions available
-[ ] Linux, macOS, or WSL Ubuntu environment ready
-[ ] Git installed and verified
-[ ] Docker installed and running
-[ ] Node.js 20+ installed
-[ ] npm installed
-[ ] AWS CLI v2 installed
-[ ] Project repository cloned
-[ ] AWS CLI credentials configured securely
-[ ] AWS identity verified successfully
-[ ] Default AWS region configured
+- AWS account created
+- Required AWS permissions available
+- Linux, macOS, or WSL Ubuntu environment ready
+- Git installed and verified
+- Docker installed and running
+- Node.js 20+ installed
+- npm installed
+- AWS CLI v2 installed
+- Project repository cloned
+- AWS CLI credentials configured securely
+- AWS identity verified successfully
+- Default AWS region configured
 
 ### 2. Networking Foundation
 
@@ -255,17 +255,17 @@ aws sts get-caller-identity --region ap-south-1
 - Prepared private subnets for backend services and database resources.
 
 ecommerce-vpc (10.10.0.0/16)
-├── Public Subnets (Internet Gateway)
-│   ├── ecommerce-public-subnet-1 (10.10.0.0/24) - ap-south-1a
-│   └── ecommerce-public-subnet-2 (10.10.1.0/24) - ap-south-1b
-├── Private ECS Subnets (NAT Gateway)
-│   ├── ecommerce-private-ecs-1 (10.10.10.0/24) - ap-south-1a
-│   └── ecommerce-private-ecs-2 (10.10.11.0/24) - ap-south-1b
-└── Private Database Subnets (NAT Gateway)
-    ├── ecommerce-private-database-1 (10.10.20.0/24) - ap-south-1a
-    └── ecommerce-private-database-2 (10.10.21.0/24) - ap-south-1b
+- Public Subnets (Internet Gateway)
+    - ecommerce-public-subnet-1 (10.10.0.0/24) - ap-south-1a
+    - ecommerce-public-subnet-2 (10.10.1.0/24) - ap-south-1b
+- Private ECS Subnets (NAT Gateway)
+    - ecommerce-private-ecs-1 (10.10.10.0/24) - ap-south-1a
+    - ecommerce-private-ecs-2 (10.10.11.0/24) - ap-south-1b
+- Private Database Subnets (NAT Gateway)
+    - ecommerce-private-database-1 (10.10.20.0/24) - ap-south-1a
+    - ecommerce-private-database-2 (10.10.21.0/24) - ap-south-1b
 	
-	<h3 align="left">ecommerce-vpc</h3>
+<h3 align="left">ecommerce-vpc</h3>
 <p align="left">
   <img src="./images/ecommerce-vpc.png" alt="ecommerce-vpc" 
        width="500" height="300" 
