@@ -18,13 +18,7 @@ This project demonstrates how an e-commerce application can be deployed on AWS u
        style="border:8px solid black; border-radius:5px;">
 </p>
 
-<h3 align="left">ecommerce-architecture</h3>
 
-<p align="left">
-  <img src="https://raw.githubusercontent.com/Divyasri-div/Devops-projects/main/images/ecommerce-architecture.png"
-       alt="ecommerce-architecture"
-       width="500" height="300">
-</p>
 
 
 ### Architecture Components
@@ -303,7 +297,7 @@ Click Create user directory
 
 <h3 align="left">ecommerce-userpool</h3>
 <p align="left">
-  <img src="images/ecommerce-userpool.png" alt="ecommerce-userpool" 
+  <img src="./images/ecommerce-userpool.png" alt="ecommerce-userpool" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -319,7 +313,7 @@ ALLOW_REFRESH_TOKEN_AUTH
 
 <h3 align="left">ecommerce-appclient</h3>
 <p align="left">
-  <img src="images/ecommerce-appclient.png" alt="ecommerce-appclient" 
+  <img src="./images/ecommerce-appclient.png" alt="ecommerce-appclient" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -336,7 +330,7 @@ ALLOW_REFRESH_TOKEN_AUTH
 
 <h3 align="left">ecommerce-s3</h3>
 <p align="left">
-  <img src="images/ecommerce-s3.png" alt="ecommerce-s3" 
+  <img src="./images/ecommerce-s3.png" alt="ecommerce-s3" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -344,7 +338,7 @@ ALLOW_REFRESH_TOKEN_AUTH
 
 <h3 align="left">ecommerce-cloudfront</h3>
 <p align="left">
-  <img src="images/ecommerce-cloudfront.png" alt="ecommerce-cloudfront" 
+  <img src="./images/ecommerce-cloudfront.png" alt="ecommerce-cloudfront" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -363,7 +357,7 @@ ALLOW_REFRESH_TOKEN_AUTH
 
 <h3 align="left">ecommerce-dynamodb</h3>
 <p align="left">
-  <img src="images/ecommerce-dynamodb.png" alt="ecommerce-dynamodb" 
+  <img src="./images/ecommerce-dynamodb.png" alt="ecommerce-dynamodb" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -371,7 +365,7 @@ ALLOW_REFRESH_TOKEN_AUTH
 
 <h3 align="left">ecommerce-rds</h3>
 <p align="left">
-  <img src="images/ecommerce-rds.png" alt="ecommerce-rds" 
+  <img src="./images/ecommerce-rds.png" alt="ecommerce-rds" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -389,35 +383,35 @@ ALLOW_REFRESH_TOKEN_AUTH
 
 <h3 align="left">ecommerce-ecr</h3>
 <p align="left">
-  <img src="images/ecommerce-ecr.png" alt="ecommerce-ecr" 
+  <img src="./images/ecommerce-ecr.png" alt="ecommerce-ecr" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
 
 <h3 align="left">ecommerce-ecs-services</h3>
 <p align="left">
-  <img src="../images/ecommerce-ecs-services.png" alt="ecommerce-ecs-services" 
+  <img src="./images/ecommerce-ecs-services.png" alt="ecommerce-ecs-services" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
 
 <h3 align="left">ecommerce-alb</h3>
 <p align="left">
-  <img src="images/ecommerce-alb.png" alt="ecommerce-alb" 
+  <img src="./images/ecommerce-alb.png" alt="ecommerce-alb" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
 
 <h3 align="left">ecommerce-tg</h3>
 <p align="left">
-  <img src="images/ecommerce-tg.png" alt="ecommerce-tg" 
+  <img src="./images/ecommerce-tg.png" alt="ecommerce-tg" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
 
 <h3 align="left">ecommerce-taskdefinitions</h3>
 <p align="left">
-  <img src="images/ecommerce-taskdefinitions.png" alt="ecommerce-taskdefinitions" 
+  <img src="./images/ecommerce-taskdefinitions.png" alt="ecommerce-taskdefinitions" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -434,7 +428,7 @@ ALLOW_REFRESH_TOKEN_AUTH
 
 <h3 align="left">ecommerce-api</h3>
 <p align="left">
-  <img src="images/ecommerce-api.png" alt="ecommerce-api" 
+  <img src="./images/ecommerce-api.png" alt="ecommerce-api" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -442,14 +436,14 @@ ALLOW_REFRESH_TOKEN_AUTH
 
 <h3 align="left">ecommerce-api-created</h3>
 <p align="left">
-  <img src="images/ecommerce-api-created.png" alt="ecommerce-api-created" 
+  <img src="./images/ecommerce-api-created.png" alt="ecommerce-api-created" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
 
 <h3 align="left">ecommerce-vpclink</h3>
 <p align="left">
-  <img src="images/ecommerce-vpclink.png" alt="ecommerce-vpclink" 
+  <img src="./images/ecommerce-vpclink.png" alt="ecommerce-vpclink" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -480,7 +474,7 @@ ALLOW_REFRESH_TOKEN_AUTH
 
 <h3 align="left">ecommerce-SNS</h3>
 <p align="left">
-  <img src="images/ecommerce-SNS.png" alt="ecommerce-SNS" 
+  <img src="./images/ecommerce-SNS.png" alt="ecommerce-SNS" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -488,14 +482,14 @@ ALLOW_REFRESH_TOKEN_AUTH
 
 <h3 align="left">ecommerce-sqs</h3>
 <p align="left">
-  <img src="images/ecommerce-sqs.png" alt="ecommerce-sqs" 
+  <img src="./images/ecommerce-sqs.png" alt="ecommerce-sqs" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
 
 <h3 align="left">ecommerce-ses</h3>
 <p align="left">
-  <img src="images/ecommerce-ses.png" alt="ecommerce-ses" 
+  <img src="./images/ecommerce-ses.png" alt="ecommerce-ses" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -521,7 +515,7 @@ ALLOW_REFRESH_TOKEN_AUTH
 
 <h3 align="left">ecommerce-iam</h3>
 <p align="left">
-  <img src="images/ecommerce-iam.png" alt="ecommerce-iam" 
+  <img src="./images/ecommerce-iam.png" alt="ecommerce-iam" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
@@ -539,7 +533,7 @@ Testing was performed to verify application connectivity and backend request pro
 
 <h3 align="left">ecommerce-app</h3>
 <p align="left">
-  <img src="images/ecommerce-app.png" alt="ecommerce-app" 
+  <img src="./images/ecommerce-app.png" alt="ecommerce-app" 
        width="500" height="300" 
        style="border:8px solid black; border-radius:5px;">
 </p>
