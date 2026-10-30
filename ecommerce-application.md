@@ -425,6 +425,11 @@ ALLOW_REFRESH_TOKEN_AUTH
 - Connected API Gateway to the backend through the configured integration.
 - Configured VPC Link for private backend connectivity where applicable.
 - Tested API requests and investigated integration errors.
+-The API Gateway will have three specific routes:
+
+ -GET /products → Product Service (public, no auth)
+ -ANY /{proxy+} → All Services (authenticated, Cognito-authorizer required)
+ -OPTIONS /{proxy+} → CORS preflight (public, no auth)
 
 <h3 align="left">ecommerce-api</h3>
 <p align="left">
